@@ -1,0 +1,39 @@
+$background:coral;
+$background2: yellow;
+@mixin button-properties{
+    padding: 10px;
+    background-color: $background;
+    font-size: larger;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+#button1{
+    @include button-properties();
+
+    &:hover{
+     transform: rotate(360deg);
+     transition: all .5s ease-in-out;
+    }
+}
+
+#card{
+    height: 140px;
+    width: 140px;
+    background-color: yellow;
+    margin-left: 20px;
+    text-align: center;
+
+    &:hover{
+        background-color: aqua;
+        transform:scale(1.2);
+        transition: all .3s ease-in-out;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    }
+}

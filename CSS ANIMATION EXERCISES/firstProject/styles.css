@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+#button1 {
+  padding: 10px;
+  background-color: coral;
+  font-size: larger;
+}
+#button1:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
+}
+
+#card {
+  height: 140px;
+  width: 140px;
+  background-color: yellow;
+  margin-left: 20px;
+  text-align: center;
+}
+#card:hover {
+  background-color: aqua;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */
